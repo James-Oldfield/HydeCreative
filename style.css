@@ -1,0 +1,230 @@
+/*
+Theme Name: HYDE
+Author: James Oldfield
+Author URI: http://james-oldfield.co
+Description: Custom theme for HYDE website
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: HYDE
+*/
+
+/*HIDE JETPACK*/
+
+img#wpstats {
+    display: none;
+}
+
+/*GLOBAL*/
+body{
+    width: 100%;
+    font-family: 'HelveticaNeue-light';
+    letter-spacing: 0.2em;
+}
+
+.main{
+    margin-bottom: 180px;
+    padding-left: 10%!important;
+    padding-right: 10%!important;
+}
+
+.single{
+    margin-top: 50px;
+}
+
+a{
+    color: #6b6b6b;
+}
+
+a:hover{
+    color: #f9ec23!important;
+    text-decoration: none!important;
+}
+
+/*SELECTION*/
+::selection {
+    background: #f9ec23; /* WebKit/Blink Browsers */
+    color: #000;
+}
+::-moz-selection {
+    background: #f9ec23; /* Gecko Browsers */
+    color: #000;
+}
+
+/*NAVBAR*/
+.navbar{
+    background-color: #fff!important;
+    border: none!important;
+    float: none!important;
+    margin-bottom: 90px!important;
+    padding: 0;
+}
+
+.navbar-header{
+    float: none!important;
+    display: inline-block;
+}
+
+.navbar-header img{
+    margin: 90px 0 90px 0;
+}
+
+.navbar-header button{
+    float:none!important;
+    padding:none!important;
+    margin:none!important;
+}
+
+.navbar-toggle{
+    margin-right: 0!important;
+}
+
+.navbar-collapse ul{
+    float: none!important;
+    display: inline-block!important;
+    z-index: 1000;
+    background: #fff;
+}
+
+.navbar-nav{
+    background: rgba(255,255,255, 0.1);
+    top: 0;
+}
+
+.navbar-default li{
+    margin: 0px;
+}
+
+.navbar ul{
+    font-size: 18px;
+    margin-bottom: 0px!important;
+}
+
+.navbar-collapse.in {
+     overflow-y: hidden!important;
+ }
+
+
+/*LANDING PAGE*/
+.single a{
+    color: #b3965e!important;
+}
+
+.single a:hover{
+    opacity: 0.5;
+}
+
+.col-right{
+    margin-top: 30px;
+}
+
+
+
+img.attachment-post-thumb.wp-post-image{
+    max-width: 100%!important;
+    height: auto;
+}
+
+.landing-page h1{
+    color: #000;
+}
+
+.landing-page p{
+    color: #6b6b6b;
+    text-align: left;
+}
+
+.post p{
+    margin-top: 20px;
+}
+
+#respond{
+    color: #7f8c8d;
+}
+
+textarea{
+    width: 100%;
+    border: 1px solid #bdc3c7;
+}
+
+p input{
+    background: none;
+    border: 1px solid #7f8c8d;
+    text-transform: uppercase;
+}
+
+p input:hover{
+    color: #b3965e;
+    border: solid #b3965e 1px;
+    text-decoration: none;
+}
+
+.post span{
+    color: #7f8c8d;
+}
+
+.sorry{
+    margin-top: 100px;
+}
+
+/*FOOTER*/
+
+.credit{
+    font-size: 22px;
+    color: #7f8c8d;
+    top: 60px;
+    padding: 5px!important;
+    margin-bottom: 40px;
+}
+
+.credit .col-left{
+    padding-left: 0%;
+}
+
+.credit .col-right{
+    padding-right: 0%;
+}
+
+.credit p{
+    font-size: 12px;
+    margin: 0;
+}
+
+.credit small{
+    font-size: 35px;
+    display: inline-block;
+}
+
+.credit a{
+    color: #6b6b6b;
+}
+
+.credit a:hover{
+    opacity: 0.5;
+}
+
+/*MEDIA QUERIES*/
+
+@media only screen and (min-width: 992px) {
+    .col-right{
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .navbar-default li{
+        margin: 0 50px 0 50px;
+    }
+
+    .navbar ul{
+        font-size: 24px;
+    }
+
+    .credit .col-right{
+        padding-right: 10%;
+    }
+
+    .credit .col-left{
+        padding-left: 10%;
+    }
+}
