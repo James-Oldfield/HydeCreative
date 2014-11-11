@@ -6,6 +6,6 @@
             </div>
 
             <div class="col-right col-lg-6 col-md-12">
-            <small>&copy;<small> <p>COPYRIGHT HYDE</p> <p>PUBLISHING <?php the_time('Y'); ?></p>
+            <small>&copy;<small> <p>COPYRIGHT HYDE</p> <p>CREATIVE <?php the_time('Y'); ?></p>
             </div>
 </div>
