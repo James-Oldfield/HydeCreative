@@ -172,7 +172,7 @@ p input:hover{
 /*ABOUT*/
 
 .about{
-    padding: 0% 22%;
+    padding: 0% 15%;
     font-size: 16px;
 }
 
@@ -239,6 +239,11 @@ p input:hover{
 
     .navbar ul{
         font-size: 20px;
+    }
+
+    .about{
+        padding: 0% 22%;
+        font-size: 16px;
     }
 }
 
