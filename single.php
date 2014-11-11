@@ -1,38 +1,33 @@
 <?php get_header(); ?>
+<div class="container main text-center">
+    
+<!--post loop-->
+<?php
+if ( have_posts() ) :
+  while ( have_posts() ) : the_post(); ?>
+        
+        <!--display thumbnail loop-->
+        <div class="landing-page">
 
-<div class="col-lg-12 single">
+            <div class="col-left col-xs-12 col-md-6">
+                <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('post-thumb'); ?></a>
+            </div>
 
-        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-
-          <article class="post">
-              
-              <a href="<?php echo get_option('home'); ?>/"><</a>
+            <div class="col-right col-xs-12 col-md-6">
+            <?php the_content() ?>
+            </div>
             
-            <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+        </div>    
 
-              
-            <hr>  
-
-                <?php the_content() ?>   
-              
-            <hr>
-            
-            <span><p>
-            <?php echo the_time('l, F jS, Y');?>
-              in <?php the_category( ', ' ); ?>.
-            </p></span>
-
-          </article>
-
-         
-        <?php endwhile; else: ?>
-          
-          <div class="page-header">
-              <p>There aren't any entries to show.</p>
-          </div>
-
-        <?php endif; ?>
-
+        <!--END display thumbnail loop-->
+    
+  <?php endwhile;
+else :
+  echo wpautop( '<p class="sorry">Sorry, no posts were found</p>' );
+endif;
+?>
+    
 </div>
 
 <?php get_footer(); ?>
+

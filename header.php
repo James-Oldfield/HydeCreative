@@ -35,7 +35,7 @@
     <div class="navbar navbar-default" role="navigation">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a href="/"><img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/hyde-logo.svg" width="320px" height="auto"/></a>
+                <a href="/"><img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/hyde-logo.svg" width="280px" height="auto"/></a>
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
@@ -46,9 +46,9 @@
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li><a href="/">About</a></li>
-                <li><a href="/about-smiths-2012-2013/">Publications</a></li>
-                <li><a href="/category/art-and-culture">Clients</a></li>
-                <li><a href="/category/literary-and-creative">Events</a></li>
+                <li><a href="/">Publications</a></li>
+                <li><a href="/">Clients</a></li>
+                <li><a href="/">Events</a></li>
             </ul>
         </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
