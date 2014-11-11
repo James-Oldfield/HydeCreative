@@ -18,7 +18,7 @@ img#wpstats {
 /*GLOBAL*/
 body{
     width: 100%;
-    font-family: 'HelveticaNeue-light';
+    font-family: 'HelveticaNeue-light', sans-serif;
     letter-spacing: 0.2em;
 }
 
