@@ -172,7 +172,7 @@ p input:hover{
 /*FOOTER*/
 
 .credit{
-    font-size: 22px;
+    font-size: 14px;
     color: #7f8c8d;
     top: 60px;
     padding: 5px!important;
@@ -211,6 +211,14 @@ p input:hover{
     .col-right{
         margin: 0;
     }
+
+    .navbar-default li{
+        margin: 0 25px 0 25px;
+    }
+
+    .navbar ul{
+        font-size: 20px;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -228,5 +236,9 @@ p input:hover{
 
     .credit .col-left{
         padding-left: 10%;
+    }
+
+    .credit{
+        font-size: 22px;
     }
 }
