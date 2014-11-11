@@ -45,10 +45,10 @@
             </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li><a href="/">About</a></li>
-                <li><a href="/">Publications</a></li>
-                <li><a href="/">Clients</a></li>
-                <li><a href="/">Events</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/comingSoon">Publications</a></li>
+                <li><a href="/comingSoon">Clients</a></li>
+                <li><a href="/comingSoon">Events</a></li>
             </ul>
         </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
