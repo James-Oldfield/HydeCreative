@@ -230,14 +230,6 @@ p input:hover{
         font-size: 24px;
     }
 
-    .credit .col-right{
-        padding-right: 10%;
-    }
-
-    .credit .col-left{
-        padding-left: 10%;
-    }
-
     .credit{
         font-size: 16px!important;
     }
@@ -245,4 +237,13 @@ p input:hover{
     .credit p{
         font-size: 12px;
     }
+
+    .credit .col-right{
+        padding-right: 10%;
+    }
+
+    .credit .col-left{
+        padding-left: 10%;
+    }
+    
 }
