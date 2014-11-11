@@ -169,6 +169,27 @@ p input:hover{
     margin-top: 100px;
 }
 
+/*ABOUT*/
+
+.about{
+    padding: 0% 22%;
+    font-size: 16px;
+}
+
+.about p{
+    margin: 30px 0;
+}
+
+.about a{
+    background: #f9ec23!important;
+    text-decoration: none!important;
+    padding: 0 5px;
+}
+
+.about a:hover{
+    color: #fff!important;
+}
+
 /*FOOTER*/
 
 .credit{
