@@ -23,7 +23,7 @@ html{
 
 body{
     width: 100%;
-    font-family: 'HelveticaNeue-light', sans-serif;
+    font-family: 'HelveticaNeue-light', Helvetica, sans-serif;
     letter-spacing: 0.2em;
 }
 
