@@ -16,6 +16,11 @@ img#wpstats {
 }
 
 /*GLOBAL*/
+
+html{
+    margin-top: 0!important;
+}
+
 body{
     width: 100%;
     font-family: 'HelveticaNeue-light', sans-serif;
@@ -66,7 +71,7 @@ a:hover{
 }
 
 .navbar-header img{
-    margin: 32px 0 50px 0;
+    margin: 45px 0 50px 0;
 }
 
 .navbar-header button{
