@@ -195,6 +195,39 @@ p input:hover{
     color: #fff!important;
 }
 
+/*COMING SOON*/
+
+img.monkey{
+    margin-bottom: 60px;
+}
+
+.type{
+    font-size: 20px;
+    display: inline;
+}
+
+.type p{
+    display: inline;
+}
+
+.cursor{
+    z-index: -9999;
+    display: inline-block!important;
+    font-size:16px;
+    color:#000!important;
+    opacity:1;
+    -webkit-animation:blink .9s infinite;-moz-animation:blink .9s infinite;animation:blink .9s infinite}
+        @keyframes blink{0%{opacity:1}
+        50%{opacity:0}
+        100%{opacity:1}}
+        @-webkit-keyframes blink{0%{opacity:1}
+        50%{opacity:0}
+        100%{opacity:1}}
+        @-moz-keyframes blink{0%{opacity:1}
+        50%{opacity:0}
+        100%{opacity:1}
+}
+
 /*FOOTER*/
 
 .credit{
@@ -250,6 +283,10 @@ p input:hover{
         padding: 0% 22%;
         font-size: 16px;
     }
+
+    img.monkey{
+        margin-bottom: 0px;
+}
 }
 
 @media only screen and (min-width: 1200px) {
