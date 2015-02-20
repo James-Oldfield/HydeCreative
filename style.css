@@ -49,11 +49,11 @@ a:hover{
 /*SELECTION*/
 ::selection {
     background: #f9ec23; /* WebKit/Blink Browsers */
-    color: #000;
+    color: #231f20;
 }
 ::-moz-selection {
     background: #f9ec23; /* Gecko Browsers */
-    color: #000;
+    color: #231f20;
 }
 
 /*NAVBAR*/
@@ -66,6 +66,7 @@ a:hover{
 }
 
 .navbar-header{
+    padding: 0px;
     float: none!important;
     display: inline-block;
 }
@@ -84,6 +85,10 @@ a:hover{
     margin-right: 0!important;
 }
 
+.navbar-collapse{
+    padding: 25px 0;
+}
+
 .navbar-collapse ul{
     float: none!important;
     display: inline-block!important;
@@ -98,6 +103,10 @@ a:hover{
 
 .navbar-nav>li>a{
     padding-top: 0px;
+}
+
+.navbar-default{
+    text-align: center;
 }
 
 .navbar-default li{
@@ -133,7 +142,7 @@ img.attachment-post-thumb.wp-post-image{
 }
 
 .landing-page h1{
-    color: #000;
+    color: #231f20;
 }
 
 .landing-page p{
@@ -177,8 +186,12 @@ p input:hover{
 /*ABOUT*/
 
 .about{
-    padding: 0% 15%;
+    padding: 0% 12.5%;
     font-size: 16px;
+}
+
+.hydeYellowLogo{
+    margin-top: 35px;
 }
 
 .about p{
@@ -195,37 +208,16 @@ p input:hover{
     color: #fff!important;
 }
 
-/*COMING SOON*/
+/*CONTACT*/
 
-img.monkey{
-    margin-bottom: 60px;
+.contact a{
+    color: inherit;
+    background: none!important;
 }
 
-.type{
-    font-size: 20px;
-    display: inline;
-}
-
-.type p{
-    display: inline;
-}
-
-.cursor{
-    z-index: -9999;
-    display: inline-block!important;
-    font-size:16px;
-    color:#000!important;
-    opacity:1;
-    -webkit-animation:blink .9s infinite;-moz-animation:blink .9s infinite;animation:blink .9s infinite}
-        @keyframes blink{0%{opacity:1}
-        50%{opacity:0}
-        100%{opacity:1}}
-        @-webkit-keyframes blink{0%{opacity:1}
-        50%{opacity:0}
-        100%{opacity:1}}
-        @-moz-keyframes blink{0%{opacity:1}
-        50%{opacity:0}
-        100%{opacity:1}
+.contact a:hover{
+    color: lightgrey!important;
+    background: none!important;
 }
 
 /*FOOTER*/
@@ -264,7 +256,29 @@ img.monkey{
     opacity: 0.5;
 }
 
+.credit h1{
+    font-size: 16px;
+}
+.credit h2{
+    margin-top: 20px;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
 /*MEDIA QUERIES*/
+
+
+@media only screen and (min-width: 768px) {
+    .navbar-default{
+        text-align: inherit;
+    }
+    .navbar-header{
+        padding: 0 150px;
+    }
+    .navbar-header img{
+        float: left;
+    }   
+}
 
 @media only screen and (min-width: 992px) {
     .col-right{
@@ -280,8 +294,11 @@ img.monkey{
     }
 
     .about{
-        padding: 0% 22%;
         font-size: 16px;
+    }
+
+    .right{
+        padding-right: 200px;
     }
 
     img.monkey{

@@ -29,13 +29,13 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         
-<div class="container text-center">   
+<div class="container">   
 
     <!--navbar-->
     <div class="navbar navbar-default" role="navigation">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a href="/"><img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/hyde-logo.svg" width="280px" height="auto"/></a>
+                <a href="/"><img class="img-responsive hydeLogo" src="<?php echo get_stylesheet_directory_uri(); ?>/img/hbyh.svg" width="280px" height="auto"/></a>
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
@@ -43,12 +43,12 @@
                         <span class="icon-bar"></span>
                     </button>
             </div>
-        <div class="navbar-collapse collapse">
+        <div class="navbar-collapse collapse text-center">
             <ul class="nav navbar-nav">
                 <li><a href="/about">About</a></li>
-                <li><a href="/comingSoon">Publications</a></li>
-                <li><a href="/comingSoon">Clients</a></li>
-                <li><a href="/comingSoon">Events</a></li>
+                <li><a href="/publications">Publications</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/contact">Contact</a></li>
             </ul>
         </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->

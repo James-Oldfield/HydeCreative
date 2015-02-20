@@ -5,14 +5,18 @@ Template Name: About template
 
 <?php get_header(); ?>
 
-<div class="about col-lg-12">
-<p>Hyde is a new creative agency that focuses on helping creatives create. From photographers to fashion designers, Hyde helps them to push their ideas out into the world.</p>
- 
-<p>We also have a passion for pushing the idea of what creativity and publishing can be. Within the next 12 months we have an array of agency led publications planned; Sex, gender and creativity are but some of the subjects we are going to explore.</p>
- 
-<p>Watch this space.</p>
- 
-<p>For more information contact: <a href="mailto:info@hydecreative.co.uk">info@hydecreative.co.uk</a> </p>
-</div>
+	<div class="col-left col-xs-12 col-md-5">
+	</div>
+	<div class="col-left col-xs-12 col-md-7 right">
+		<p>H by Hyde aims to showcase independent publications by new and 
+		established creatives. From Art to Poetry we bring you works from across the globe all the way to our pop-up bookshop launching at the end of Summer 2015 in East London.</p>
+
+		<p>The intention for the project is to bring together an eclectic mix of creativity and encourage interdisciplinary discourse between emerging artists, 
+		designers and writers. To further this creative exchange, the bookshop will hold talks, workshops and mixers, engaging the reader with our brimming pool of talent.</p>
+
+		<p>H by Hyde is the first major project launch by Hyde Creative agency. The aim of the agency is to foster collaboration across creative disciplines and 
+		advance the interdisciplinary nature of the modern creative practice.</p>
+	</div>
+
 
 <?php get_footer(); ?>
