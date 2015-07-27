@@ -41,17 +41,21 @@
   /**
    * FONTS
    */
-  @import url(http://fonts.googleapis.com/css?family=Vollkorn:400italic,400);
+  @font-face {
+    font-family: 'hydeFont';
+    src: url('../fonts/Graphik-Light.otf')
+    format('opentype');
+  }
 
   $serifFont: 'Volkorn';
-  $sansFont:  'Helvetica';
+  $sansFont:  'hydeFont';
 
   @mixin font($style) {
     @if $style == serif {
       font-family: $serifFont, serif!important;
     }
     @else if $style == sansSerif {
-      font-family: $sansFont, sans-serif!important;
+      font-family: $sansFont, 'Helvetica', sans-serif!important;
     }
   }
 

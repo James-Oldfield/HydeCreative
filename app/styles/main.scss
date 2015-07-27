@@ -17,12 +17,21 @@ $icon-font-path: '../fonts/';
 // GLOBALS
   body {
     background: $mainYellow;
+    @include font(sansSerif);
+    max-width: 100%;
+    word-break: break-word;
   }
   a {
     color: $mainBlack;
+
+    &:hover {
+      text-decoration: none;
+      color: $mainYellow;
+      background: $mainBlack;
+    }
   }
   .container {
-    @include breakpoint(md) {
+    @include breakpoint(lg) {
       margin: 0!important;
       padding: 0!important;
       width: 100%;
@@ -30,16 +39,40 @@ $icon-font-path: '../fonts/';
   }
   .contentWrapper {}
 
+// SCROLL BAR
+  ::-webkit-scrollbar {
+    width:13px;
+    margin: 5px;
+  }
+  ::-webkit-scrollbar-thumb{
+    background: $mainBlack;
+  }
+  ::-webkit-scrollbar-corner{
+    background: $mainBlack;
+  }
+
+// SELECT HIGHLIGHT
+  ::-moz-selection {
+    color: $mainYellow;
+    background: $mainBlack;
+  }
+
+  ::selection {
+    color: $mainYellow;
+    background: $mainBlack;
+  }
+
 // HOMEPAGE
   .header {
 
-    @include breakpoint(md) {
+    @include breakpoint(lg) {
       position: fixed;
       z-index: 1;
       left: 0px;
-      width: 400px;
+      width: 500px;
       top: 0px;
       margin-top: 50px;
+      padding-left: 100px;
     }
 
     .logo {
@@ -49,27 +82,66 @@ $icon-font-path: '../fonts/';
       padding: 15% 5%;
       display: block;
       margin: 0 auto;
+
+      @include breakpoint(md) {
+        padding: 10% 5%;
+      }
+
+      @include breakpoint(lg) {
+        margin: 0px;
+      }
     }
 
     ul.nav {
       text-align: center;
       margin-bottom: 25px;
+
+      @include breakpoint(lg) {
+        text-align: left;
+        margin: 0 auto;
+      }
       
       li {
+        font-size: 18px;
         display: inline-block;
 
+        @include breakpoint(md) {
+          font-size: 25px;
+        }
+        @include breakpoint(lg) {
+          display: block;
+        }
+
         a {
+          display: inline-block;
+
           &:hover {
+            opacity: 1;
             color: $mainYellow;
             background: $mainBlack;
           }
         }
       }
     }
+    .credit {
+      display: none;
+
+      @include breakpoint(lg) {
+        display: block;
+        padding-left: 15px;
+        margin-top: 30px;
+        font-size: 16px;
+        bottom: 20px;
+        position: fixed;
+      }
+    }
   }
-  .home {
-    @include breakpoint(md) {
-      margin-left: 400px;
+  .main {
+    display: inline-block;
+    margin-bottom: 50px;
+
+    @include breakpoint(lg) {
+      margin-left: 500px;
       left: 0px;
       position: relative;
       margin-top: 100px;
@@ -77,8 +149,22 @@ $icon-font-path: '../fonts/';
     }
 
     .photos {
-      @include breakpoint(md) {
+      @include breakpoint(lg) {
         padding: 0px;        
+      }
+
+      .photo {
+        p {
+          margin: 10px 0;
+          font-size: 18px;
+          font-style: italic;
+        }
+      }
+
+      a {
+        &:hover {
+          opacity: 1!important;
+        }
       }
 
       img {
@@ -87,13 +173,34 @@ $icon-font-path: '../fonts/';
       }
     }
     .copy {
-      margin: 50px;
+      margin: 50px 0;
       display: inline-block;
+      font-size: 18px;
 
-      @include breakpoint(md) {
+      @include breakpoint(lg) {
         margin: 0;
         padding: 0 50px;
       }
     }
   }
 
+  // CONTACT
+  .contact {
+    padding: 50px 50px;
+    p {
+      font-size: 22px;
+      &:nth-child(2n) {
+        margin-bottom:50px;
+      }
+    }
+    .socialIcons a {
+      &:hover {
+        background: none;
+      }
+    }
+  }
+
+  // FOOTER
+  .footer {
+    margin-top: 50px;
+  }
