@@ -5,6 +5,9 @@ import browserSync from 'browser-sync';
 import del from 'del';
 import {stream as wiredep} from 'wiredep';
 
+// GH pages deployment
+import ghPages from 'gulp-gh-pages';
+
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
 
@@ -154,6 +157,12 @@ gulp.task('wiredep', () => {
       ignorePath: /^(\.\.\/)*\.\./
     }))
     .pipe(gulp.dest('app'));
+});
+
+// DEPLOYMENT TASK
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
 });
 
 gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras'], () => {

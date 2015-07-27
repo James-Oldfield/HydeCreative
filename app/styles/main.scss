@@ -43,7 +43,7 @@ $icon-font-path: '../fonts/';
     }
 
     .logo {
-      width: 200px;
+      width: 300px;
       max-width: 100%;
       height: auto;
       padding: 15% 5%;
@@ -92,6 +92,7 @@ $icon-font-path: '../fonts/';
 
       @include breakpoint(md) {
         margin: 0;
+        padding: 0 50px;
       }
     }
   }
