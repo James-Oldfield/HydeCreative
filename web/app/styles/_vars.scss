@@ -1,0 +1,79 @@
+/**
+ * VARIABLES - Add your basic variables here
+ */ 
+
+ /**
+  * Media Queries
+ */
+  $px-768:  (min-width: 768px);
+  $px-992:  (min-width: 992px);
+  $px-1200: (min-width: 1200px);
+
+  /**
+   * MIXINS
+   */
+
+  @mixin breakpoint($class) {
+    // XS
+    @if $class == xs {
+      @media (max-width: 767px) { @content; }
+    }
+    // SMALL
+    @else if $class == sm {
+      @media (min-width: 768px) { @content; }
+    }
+    // MEDIUM
+    @else if $class == md {
+      @media (min-width: 992px) { @content; }
+    }
+    // LARGE
+    @else if $class == lg {
+      @media (min-width: 1200px) { @content; }
+    }
+  }
+
+  /**
+   * COLOURS
+   */
+  $mainYellow: #f3ed42;
+  $mainBlack:  #1a1a1a;
+
+  /**
+   * FONTS
+   */
+  @import url(http://fonts.googleapis.com/css?family=Vollkorn:400italic,400);
+
+  $serifFont: 'Volkorn';
+  $sansFont:  'Helvetica';
+
+  @mixin font($style) {
+    @if $style == serif {
+      font-family: $serifFont, serif!important;
+    }
+    @else if $style == sansSerif {
+      font-family: $sansFont, sans-serif!important;
+    }
+  }
+
+  /**
+   * ASSET STYLING
+   */
+
+  @mixin h1Header() {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+
+    @include breakpoint(sm) {
+      font-size: 25px;
+    }
+  }
+  @mixin h2Header() {
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 600;
+
+    @include breakpoint(sm) {
+      font-size: 15px;
+    }
+  }
